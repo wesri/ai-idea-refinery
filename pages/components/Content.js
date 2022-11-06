@@ -109,7 +109,7 @@ export default function Content() {
 
       </div>
     );
-  }else if (phase == 7) {
+  } else if (phase == 7) {
     return(
       <Dashboard phase={phase} setPhase={setPhase} risks={risks} ideaInput={ideaInput} city={city} industry={selectedIndustry}/>
     );

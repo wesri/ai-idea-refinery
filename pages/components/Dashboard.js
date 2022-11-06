@@ -28,7 +28,7 @@ export default function Dashboard({phase, setPhase, risks, ideaInput, city, indu
       <div className={styles.smalldivider}></div>
       <div className={styles.feedbackbox}>
         <Box sx={{ p: 2, border: '1px dashed orange' }}>
-          <div className={styles.titleTextOrange}>AI-powered assesment for your idea: {ideaInput}</div>
+          <div className={styles.titleTextOrange}>AI-powered assesment for the idea: {ideaInput}</div>
           <br></br>
           <div className={styles.smallText}>{risks}</div>
         </Box>
@@ -36,16 +36,11 @@ export default function Dashboard({phase, setPhase, risks, ideaInput, city, indu
       <div className={styles.smalldivider}></div>
       <div className={styles.feedbackbox}>
         <Box sx={{ p: 2, border: '1px dashed orange' }}>
-          <div className={styles.titleTextOrange}>Your location: {city}</div>
+          <div className={styles.titleTextOrange}>Top mentors for your selected industry ({industry}) based on your location ({city}):</div>
           <br></br>
-          <div className={styles.smallText}>If you need help with your business plan you can reserve a time with your local business advisor.</div>
-        </Box>
-      </div>
-      <div className={styles.smalldivider}></div>
-      <div className={styles.feedbackbox}>
-        <Box sx={{ p: 2, border: '1px dashed orange' }}>
-          <div className={styles.titleTextOrange}>Top mentors for your idea ({industry})</div>
-          <br></br>
+          <div>
+          <img src="/experts.png" className={styles.icon} />
+          </div>
         </Box>
       </div>
     </div>
